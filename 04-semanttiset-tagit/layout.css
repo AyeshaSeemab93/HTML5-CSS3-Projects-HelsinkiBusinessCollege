@@ -1,0 +1,66 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    
+
+    /*        FLEX        */
+    /*using flex for layout. 
+        Container                              */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* take extra elements to next line otherwise stretch down to full body*/
+}
+            /*ITEMS*/
+body > *{
+    
+    flex-grow: 1;
+    flex-basis: 100%; /*all items take full line(width 100%)*/
+    
+}
+ /* Section and aside float with each other-use flex-basis   */
+ 
+  body > section, 
+  body > aside {
+    flex-basis: 0%; /*give minimum width 0(not fix width) so both always move side by side even on smallest screen*/
+  }
+ /*        FLEX  END      */
+header{
+    background-color: #DF1227;
+    padding: 1rem;
+}
+nav{
+    background-color: #F28F2D;
+    padding: 1rem;
+}
+section{
+    background-color: #FEC000;
+    padding: 1rem;
+}
+section > p{
+    margin-block-end: 2rem;
+}
+
+article{
+    background-color: #7AC141;
+    padding: 1rem;
+    
+}
+.article-1
+{
+    margin-block-end: 1rem;  
+}
+aside{
+    background-color: #016FB4;
+    padding: 1rem;
+    
+           
+}
+footer{
+    background-color: #932B8E;
+    padding: 1rem;
+}
