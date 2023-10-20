@@ -1,0 +1,37 @@
+html 
+{
+  font-size: 62.5%; /* muutetaan fontiikoko 62.5% x 16px = 10px --> käytä fonttikoon muttamiseen bosyn sisällä yksikkö rem */
+}
+body 
+{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+}
+h1,
+p,
+figure
+img
+{
+  margin-block-end: 3rem;    /* = margin bottom */
+ 
+}
+h1 
+{
+  font-size: 3.2rem;
+  font-weight: bold;
+
+}
+p 
+{
+  font-size: 1.6rem;
+}
+figure 
+{
+  display: block;
+  margin-block-end: 2rem;
+}
+figure img
+{
+  max-width: 100%;
+}
+
