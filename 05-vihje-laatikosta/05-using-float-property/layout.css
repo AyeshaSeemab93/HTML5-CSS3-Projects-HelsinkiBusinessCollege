@@ -1,0 +1,30 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+/*Giving style to all the paragraphs(li)*/
+ol > * {
+    margin-block-end: 1rem;
+    padding: 1rem;
+    border-radius: 0 0 2rem 0; /*top right bottom left*/
+}
+.container-1{
+float: left;
+width: 68%;
+margin-left: 1rem;
+}
+.container-2{
+float: right;
+width: 30%;
+}
+.container-1 ol> li:nth-child(even)
+{
+    background-color: rgb(206, 244, 149);
+}
+.container-2 ol> li:nth-child(odd)
+{
+    background-color: rgb(206, 244, 149);
+}
