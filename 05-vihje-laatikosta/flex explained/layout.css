@@ -1,0 +1,47 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+    font-size: 1.6rem;
+}
+
+/*FLEX*/
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*Making both container parallel*/
+.container-1{
+    flex-grow: 2;
+    flex-basis: 0%;
+/*0r   flex: 2;       = flex-grow(2) + flex-shrink(2) + flex-basis(0) */
+}
+.container-2{
+    flex-grow: 1;
+    flex-basis: 0%;
+    
+/*0r   flex: 1;       = flex-grow(1) + flex-shrink(1) + flex-basis(0) */
+}
+/*FLEX END*/
+
+/*Giving style to all the paragraphs(li)*/
+ol > * {
+    margin-block-end: 1rem;
+    padding: 1rem;
+    border-radius: 0 0 2rem 0; /*top right bottom left*/
+}
+.container-1 > *{
+    margin-right: 1.5rem;
+
+}
+.container-1 ol> li:nth-child(even)
+{
+    background-color: rgb(206, 244, 149);
+}
+.container-2 ol> li:nth-child(odd)
+{
+    background-color: rgb(206, 244, 149);
+}
