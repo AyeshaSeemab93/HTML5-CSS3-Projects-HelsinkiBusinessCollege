@@ -1,0 +1,123 @@
+html{
+    font-size: 62.5%; /* base font size: 62.5% X 16px = 10px */
+}
+body {
+  margin: 1rem; /* = 10px*/
+ font-family:'Times New Roman', Times, serif; /* DANGERRR    font downloaded but not appearing here */
+}
+h1,
+h2,
+h3,
+p,
+pre,
+ul,
+section{
+    margin-block-end: 1rem; /* = margin bottom*/
+}
+section{
+    background-color: #BBDDEE;
+    padding: 1rem;  
+}
+h1{
+display: block;
+font-size: 2rem;
+font-weight: bold;
+}
+h2{
+   
+    font-size: 2rem;
+    background-color: #88AABB;
+    padding: inherit;
+    margin: -1rem -1rem 1rem -1rem;
+    text-align: right;
+}
+h3{
+    font-size: 2rem;
+    display: block; 
+    margin-left: -0.8rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.p{
+    display: block;
+    margin-left: 9rem;
+    line-height: 12px;
+    margin-block-end: 2rem; 
+    
+    }
+    .first-p
+    {
+        font-size: 110%;
+        line-height: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    pre{
+        font-size: 1.3rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 500;
+        margin-inline-start: -5rem;
+       line-height: 1.5rem;
+       white-space: pre;     
+    }
+    .sec-2,.sec-3{
+    border: solid;  
+   }
+
+ul{
+    font-size: 1.6rem;
+}
+
+/*Class- tyyppiset säännöt*/
+.iso-kirjain{
+    float: left;/*stay inline with text but on 1 side*/
+    font-size: 500%;
+    width: 1.2em;
+    text-align: center;
+    padding: 0.1em 0.1em 0;
+    background-color: #556688;
+    color: white;
+    border: solid white;
+    border-width: 0 0.2em 0.2em 0; /*Inc width of 2 border sides with white color, give white empty space*/
+    margin: -1rem 0.5em 0.2em -1rem;
+}
+/*ID- tyyppiset säännöt*/
+#Pikkukuva-vasen-ylanurkka{
+    float: left;
+    margin: -1rem 2rem 2rem -1rem;
+    display: block;     /* kuvasta responsiivinen*/
+    max-width: 9rem;       /*määrittelee kuvan leveydeksi 90px */
+    background-color: white;
+    border-color: black;
+   border-right: solid;
+   border-bottom: solid;
+    
+}
+#Pikkukuva-vasen-ylanurkka img{
+    max-width: 90%;    /* kuvasta responsiivinen*/
+}
+/* 3. laatikon banner paikoilleen*/
+.banner1{    float: left;
+    float: left;
+    margin: -1rem 0rem 0rem -1rem;
+    padding: inherit;
+    font: inherit;
+    background-color: white;
+    width: 52%;
+    font-size: small;
+    border-right: solid;
+    border-bottom: solid;
+}
+.banner2{
+    float: right;
+    background: white;
+    border: solid;
+    border-right: 0;
+    width: 25%;
+    padding: 3rex;
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: -1.2rem;
+    border-right: 0;
+    text-align: left;
+}
