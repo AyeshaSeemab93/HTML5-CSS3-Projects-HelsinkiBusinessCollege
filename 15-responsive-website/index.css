@@ -1,0 +1,186 @@
+html{
+  font-size: 62.8%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+ 
+  background-color: #FBF6ED;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #696766;
+  line-height: 2rem;
+}
+.wrapper{
+  width: 96%;
+  padding: 1.5rem; 
+}
+header{
+  border-bottom: solid;
+  border-width: 0.1rem;
+  border-color: #a9a5a3;
+}
+.special{
+  background-image: url("./images/backgroung-img.jpeg");
+  color: white;
+  padding: 1rem;
+  word-wrap: break-word;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+}
+.special span{
+  color: #A3B1B1;
+  font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+  text-align: center;
+  margin: 1rem;
+}
+nav{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;  
+}
+nav > *{
+  color: #7e8888;
+  font-weight: 500;
+}
+.home{
+  color: black;
+  font-weight: 600;
+}
+.main{
+  padding-top: 1rem;
+  
+  font-family: Times;
+
+  line-height: 2rem;
+  word-spacing: 0.5rem;
+}
+.pretzel-image{
+ max-width: 100%;
+ height: auto;
+}
+.callout{
+  display: none;
+  padding-top: 2rem;
+  background-color: #F8EBCB;
+  text-align: center;
+  line-height: 2rem;
+}
+.sec-nav,
+.second-part,
+.ingredients,
+.about-us,
+.salt-and-battery,
+footer{
+  display: none;
+}
+
+@media screen and (min-width: 426px){
+  header{
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+  }
+  .logo{
+    display: flex;
+    align-items: center; 
+    margin-left: -1rem;
+  }
+  nav{ 
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-bottom: 0rem;
+    }
+  .limited-to-screens{
+    display: block;
+  }
+.callout{
+  display: block;
+  padding-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.second-part{
+  display: block;
+}
+.sec-nav,
+.ingredients,
+.about-us,
+.salt-and-battery{
+  display: none;
+}
+}
+
+@media screen and (min-width: 769px){
+  .sec-nav,
+  .second-part,
+  .ingredients,
+  .about-us,
+  .salt-and-battery,
+  footer{
+    display: block;
+  }
+.sec-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main{
+  flex-basis: 59%;  /*width*/
+}
+.sidebar{
+  margin-top: 1rem;
+  flex-basis: 39%; /*width*/
+}
+.callout{
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+h1{
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.flex-it{
+  color: #6AAECC;
+  text-decoration: underline;
+  border-bottom: solid;
+  border-width: 0.1rem;
+  padding-bottom: 1rem;
+  border-color: #b8b4b3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flex-it > *{
+  flex-basis: 50%;
+  flex-grow: 1;
+  
+}
+footer{
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #a9a5a3;
+}
+.sb-logo{
+  height: 2.5rem;
+  margin-top: 0.8rem;
+}
+
+} 
