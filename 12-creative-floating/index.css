@@ -1,0 +1,102 @@
+
+html{
+  font-size: 62.8%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container{
+box-sizing: border-box;
+width: 400px;
+background-color: gainsboro;
+background-image: linear-gradient(to bottom right, gainsboro, white);
+padding: 1em;
+border: solid rgb(189, 187, 187) 1px;
+border-radius: 10px;
+margin-bottom: 5rem;
+margin-left: 1rem;
+}
+.clearfix::after {
+  visibility: hidden;
+  font-size: 0;
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+.clearfix{
+  margin-bottom: 1rem;
+
+}
+.heading{
+  font-size: larger;
+  font-size: 2rem;
+  font-weight: 500;
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
+
+  
+}
+.image{
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  box-shadow: darkgray 3px;
+  padding: 5px;
+  border: solid;
+  border-left: lightgray;
+  border-top: lightgray;
+  border-right: darkgray;
+  border-bottom: darkgray;
+  border-width: 1px;
+  background-color: white;
+  text-align: center;
+}
+.image img{
+  width: 80px;
+  height: 80px;
+ 
+}
+.text{
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.reverse .image{
+  float: right;
+  width: 25%;
+}
+.reverse .text{
+  float: left;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.reverse .heading{
+  float: left;
+  width: 30%;
+}
+@media sreen and (max-width: 425px){
+body{
+  margin: 0;
+}
+.container{
+  margin-bottom: 0;
+  width: 100%;
+  min-width: 320px;
+  padding: 10px;
+  
+
+}
+}
+  
+
