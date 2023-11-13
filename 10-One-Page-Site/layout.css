@@ -1,0 +1,326 @@
+
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+    padding: 3rem;
+    background-color: #333333;
+}
+.nav-bar{
+background-color: black;
+color: white;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+font-size: 1.7rem;
+padding: 2rem;
+}
+.nav-bar > * {
+    flex: 1;
+    vertical-align: middle;
+    text-align: center;
+}
+.portfolio{
+    flex: 2;
+    text-align: left;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.section-1{
+    background-image: url("./Images/building-at-night.jpg");
+    background-size: 100%;
+    background-position: left; 
+    font-size: 2rem;
+    color: white;
+    padding: 3rem;
+}
+.data{
+background-color: rgba(0, 0, 0, 0.7);
+padding: 2rem;
+
+}
+.data > *{
+    line-height: 3rem;
+}
+.portfolioNimi{
+    font-size: 3rem;
+    color: rgb(246, 99, 20);
+    padding: 1rem;
+}
+.palveluja{
+    
+    font-size: 3rem;
+    color: rgb(246, 99, 20);
+    padding: 1rem;
+}
+span{
+    font-style: italic;
+    color: bisque;
+}
+.section-2{
+  background-color: white;
+}
+.flex{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+ align-items: flex-start;
+}
+/* .sec-heading{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;   
+    
+} */
+.column{
+flex-grow: 1;
+flex-basis: 0;
+border: solid;
+border-color: rgb(188, 185, 185);
+border-radius: 20px;
+padding: 1rem;
+margin: 0.5rem;
+}
+.column-img{
+
+    object-fit: contain;
+    padding: 0.2rem;
+}
+.column-img > *{
+    width: 100%;
+    height: 20rem;
+}
+.card-title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem 0.2rem;
+}
+
+.see-more{
+    color: rgb(246, 203, 152);
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 1rem 0.2rem;
+}
+.section-3, .section-4{
+    margin: 2rem 0.2rem;
+    padding: 1rem 0.2rem;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #7ea2a9;
+    font-size: 1.5rem;
+}
+.section-4{
+    border-top: 0;
+    border-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+.sec-heading{
+    padding: 1rem;
+    color: #A9663F;
+    font-size: 3rem;  
+    font-weight: 500;
+}
+.flex-3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ justify-content: space-between;
+
+
+}
+.flex-3 > *{
+    flex-grow: 1;
+    flex-basis: 0;
+    
+}
+.data-3{
+ padding: 1rem;
+ color: white;
+ flex-grow: 2;
+}
+
+.sec-photo > img{
+    width: 100%; /*to reduce size to image to the size of div*/
+     min-height: 100%; /*img is always full height */
+}
+.float-photo > img{
+ float: left;
+ width: 30rem;
+margin-right: 1rem;
+margin-bottom: 1rem;
+}
+.data-4{
+    color: white; 
+}
+.section-5{
+border-top: solid;
+border-color: #7ea2a9;
+clear: both;
+}
+
+.container{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+vertical-align: middle;
+padding-top: 1rem;
+}
+
+.details{
+color: white;
+display: flex;
+flex-direction: row;
+vertical-align: middle;
+justify-content: space-between;
+padding-top: 1rem;
+font-size: 1.5rem;
+padding-right: 2rem;
+}
+.info{
+
+    flex: 1;  
+}
+.input{
+    flex: 2; 
+    margin-right: 1rem;
+}
+input{
+    width: 100%;
+    line-height: 2rem;
+}
+.button{
+  text-align: center;
+}
+button{
+    background-color: #D1681E;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+  
+}
+footer{
+    color: white;
+    font-size: 1.2rem;
+    border-top: solid;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+}
+
+/* ..................... */
+@media only screen and (max-width: 426px) 
+{
+
+.main{
+    padding: 0.1rem 0.5rem;
+}
+.nav-bar{
+    font-size: 1rem;
+    padding: 1rem;
+}
+.data{
+    font-size: 1.3rem;
+}
+.palveluja{
+    font-size: 1.6rem;
+}
+.flex-3{
+    display: block;
+}
+.sec-photo > img{
+    height: 30rem; /*reducing size of img*/
+ 
+}
+
+.float-photo > img{
+    padding: 0;
+    margin: 0 0 0.5rem 0;;
+    width: 100%;
+}
+
+.section-4{
+padding-bottom: 0;
+}
+.data-4{     
+clear: both;
+}
+.details{
+margin-left: 1rem;
+}
+}
+
+@media only screen and (min-width:427px) and (max-width:768px){
+
+
+    .main{
+        padding: 0.5rem 1rem;
+    }
+    .nav-bar{
+        font-size: 1.2rem;
+        padding: 1.5rem;
+       
+    }
+    .data{
+        font-size: 1.6rem;
+    }
+    .palveluja{
+        font-size: 2rem;
+        
+    }
+    .flex-3{
+        display: block;
+       
+    }
+    .sec-photo{
+        text-align: center;
+    }
+    
+    .sec-photo > img{
+        /* height: 20rem; reducing size of img */
+        width: 70%;  
+     
+    }
+    .float-photo{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        order: 1;
+    }
+    .flex-div{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .float-photo  img{
+        width: 70%;
+      
+
+    }
+    
+    .data-4{   
+        clear: both;  
+    padding-left: 1rem;
+    order: 2;
+    padding-bottom: rem;
+    }
+    .details{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+    }
+
+
