@@ -1,0 +1,272 @@
+/*For Mobile*/
+html{
+    font-size: 62.8%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.mobile, .tablet, .desktop{
+    display: block;  
+    float: right;
+    background-color: #629FDB;
+    padding: 1rem;
+    max-width: 20%;
+    }
+    .tablet, .desktop{
+    display: none;
+    }
+.firstSection{
+    background-color: #7AB354;
+}
+h1{
+    padding-top: 1rem;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+
+.menu{
+    background-color: #7AB354;
+}
+.menu > *{
+    display: block;
+    background-color: #9DCD7C;
+    color: white;
+     border: solid;
+     border-color: #72ab4c;
+     border-radius: 1rem;
+     padding: 1rem;
+     font-weight: 500;
+     text-align: center;
+     margin: 0; 
+}
+.footer-1{
+    padding:1rem;
+    word-wrap: normal;
+    color: black;
+}
+.footerImage{
+    display: none;
+}
+
+ /*Section 2,3,4*/
+.special, .events, .news{
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    background-color: rgb(191, 190, 190);
+    padding: 1rem;
+    text-align: start;
+}
+.arrow{
+    float: right;
+    font-size: 2rem;
+    font-weight: 900;
+}
+/*images*/
+.figure{
+    
+    max-width: 5000px;
+    max-height: 1000px;
+}
+.figure> img{
+    max-width: 100%;
+}
+/*section 4 list*/
+.no{
+    font-weight: 900;
+    margin-right: 20px;
+}
+footer{
+    background-color: #82BF5B;
+    padding-top: 1rem;
+    color: white;
+    line-height: 1.5rem;
+}
+.number{
+    color: black;
+}
+/*icons---Not Working*/
+i{
+    float: right;
+    background-color: white;
+}
+
+/*.............................................*/
+
+
+/*For Tablet*/
+@media only screen and (min-width: 424px){
+   html{
+   
+    background-color: white;
+   }
+  body{
+        background-color: #9DCD7C;   
+        margin: 1rem;     
+    }
+    section{
+       background-color: white; 
+    }
+    
+     .tablet{
+        display: block;  
+      float: right;
+     }
+    .mobile, .desktop{
+        display: none;
+    }
+   h1 > figure
+   {
+    width: 60%;
+   }
+     .menu{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+     }
+     .menu > *{
+         flex-grow: 1;
+         flex-basis: 0%;
+     }
+
+     .footer-1{
+        background-color: white;
+         color: black;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+     }
+    .moto
+    {
+        background-image: url("./images/background-image.jpeg");
+        padding: 1rem;
+ display: flex;
+flex-grow: 2;
+flex-basis: 0;
+    }
+    .moto > p{
+        flex-grow: 1;
+        flex-basis: 0; 
+        font-size: 2rem;
+        line-height: 2rem;
+        align-self: center;
+        
+    }
+    .blurypic{
+        display:flex;
+        flex: 1;
+       
+       
+    }
+     .footerImage{
+       display: flex;
+       width: 50%;;
+       flex-grow: 1;
+       flex-basis: 0; 
+       
+       
+     }
+    
+
+     .section2and3{
+      
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .section2and3 > *{
+        flex-grow: 1;
+        flex-basis: 0%;
+    }
+    .secondSection
+    {
+background-color: white; 
+       padding: 0.5rem;
+    }
+    .thirdSection{
+        background-color: white; 
+       padding: 0.5rem;
+    }
+        .forthSection{
+            margin-top: 1rem;
+          background-color: white; 
+       padding: 0.5rem;
+      
+            
+        } 
+    }
+     
+/*.............................................*/
+
+/*For desktop*/
+@media only screen and (min-width: 768px){
+html{
+   
+    background-color: #79B254;   
+   }
+  body{
+          background-color: #83C05B;         
+    }
+.desktop{
+    display: block;  
+    float: right; 
+     }
+        footer-1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+         h1 > figure
+   {
+    width: 50%;
+   }
+    .mobile, .tablet{
+            display: none;
+        }
+.footer-1 > p{
+    font-size: 3rem;
+    word-wrap: normal;
+    line-height: 3rem;
+    max-width: 90%;
+}
+.footerImage{
+    flex-grow: 1;
+   flex-basis: 0;
+}
+
+        .sectionall{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+         .sectionall> *{
+           
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            
+        } 
+        .section2and3{
+            display:flex
+           
+        }
+        .forthSection{
+            max-width: 33%;
+            margin-top: 0;
+        }
+        
+        
+        
+         
+        
+        }
+         
+        
+             
+
+            
